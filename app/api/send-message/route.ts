@@ -6,8 +6,8 @@ export async function POST(request: Request) {
       return new Response("Invalid message", { status: 400 });
     }
 
-    const token = process.env.TELEGRAM_BOT_TOKEN!;
-    const chatId = process.env.TELEGRAM_CHAT_ID!;
+    const token = process.env.TELEGRAM_TOKEN!;
+    const chatId = process.env.CHAT_ID!;
 
     const telegramUrl = `https://api.telegram.org/bot${token}/sendMessage`;
 
