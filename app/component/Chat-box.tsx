@@ -29,6 +29,7 @@ export default function ChatBox() {
     <div>
       <textarea
         value={message}
+        onChange={(e) => setMessage(e.target.value)}
         className=" border border-gray-900 h-32 w-92 text-black p-4 rounded-lg"
         placeholder="send message to Alorik"
         rows={5}
